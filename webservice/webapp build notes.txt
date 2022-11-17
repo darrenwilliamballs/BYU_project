@@ -1,0 +1,85 @@
+Darrens-MacBook-Pro:webapp darrenballs$ npx create-nuxt-app webapp --spa
+npx: installed 407 in 22.906s
+> Generating Nuxt.js project in /Users/darrenballs/Development/BYU_project/webapp/webapp
+? Project name webapp
+? Project description BYU movie lookup application
+? Use a custom server framework 
+  none 
+  express 
+  koa 
+  adonis 
+  hapi 
+  feathers 
+❯ micro 
+Darrens-MacBook-Pro:webapp darrenballs$ npx create-nuxt-app --spa
+npx: installed 407 in 29.459s
+> Generating Nuxt.js project in /Users/darrenballs/Development/BYU_project/webapp
+? Project name webapp
+? Project description byu movie lookup application
+? Use a custom server framework none
+? Choose features to install Progressive Web App (PWA) Support, Linter / Formatter, Prettier
+, Axios
+? Use a custom UI framework vuetify
+? Use a custom test framework ava
+? Choose rendering mode Single Page App
+? Author name Darren Balls
+? Choose a package manager yarn
+Initialized empty Git repository in /Users/darrenballs/Development/BYU_project/webapp/.git/
+npm WARN deprecated circular-json@0.3.3: CircularJSON is in maintenance only, flatted is its
+ successor.
+
+> fsevents@1.2.7 install /Users/darrenballs/Development/BYU_project/webapp/node_modules/fsevents
+> node install
+
+node-pre-gyp WARN Using request for node-pre-gyp https download 
+[fsevents] Success: "/Users/darrenballs/Development/BYU_project/webapp/node_modules/fsevents/lib/binding/Release/node-v59-darwin-x64/fse.node" is installed via remote
+
+> nodemon@1.18.9 postinstall /Users/darrenballs/Development/BYU_project/webapp/node_modules/nodemon
+> node bin/postinstall || exit 0
+
+Love nodemon? You can now support the project via the open collective:
+ > https://opencollective.com/nodemon/donate
+
+
+> nuxt@2.3.4 postinstall /Users/darrenballs/Development/BYU_project/webapp/node_modules/nuxt
+> opencollective || exit 0
+
+                                                             
+                                     :=.                     
+                                    -=+=:   :-               
+                                  .-=+++=: :++=.             
+                                 .-+++++++=+**+=.            
+                                .=+++++++****+**+.           
+                               :=+++++++******+**+:          
+                              :=+++++++********++*+:         
+                             :=+++++++**********++*+-        
+                            -=+++++++***************+-.      
+                          .-======++**************++++=.     
+                          .........::::::::::::::::::::.     
+                                         
+                         Thanks for installing nuxtjs 🙏
+                 Please consider donating to our open collective
+                        to help us maintain this package.
+                                         
+                           Number of contributors: 161
+                              Number of backers: 146
+                              Annual budget: $41,435
+                             Current balance: $10,110
+                                         
+           👉  Donate: https://opencollective.com/nuxtjs/donate
+                                         
+npm notice created a lockfile as package-lock.json. You should commit this file.
+added 1602 packages in 85.507s
+
+        To get started:
+
+         yarn run dev
+
+  To build & start for production:
+
+         yarn run build
+         yarn start
+
+  To test:
+
+         yarn run test

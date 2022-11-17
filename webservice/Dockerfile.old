@@ -1,0 +1,28 @@
+#FROM java:8   #  this is preaty bloated swithing to anapsix/alpine-java
+FROM anapsix/alpine-java
+# app.jar is the is your jar file that your project creates.
+ADD dtw-web.jar app.jar
+EXPOSE 8080
+CMD ["java", "-jar", "/app.jar"]
+
+# to run the application locally
+#>docker urn -i -t --name-container-name -p8080:8080 your-image-name:tag
+
+
+# Install maven
+RUN apt-get update
+RUN apt-get install -y maven
+
+WORKDIR /code/BYU
+
+# Prepare by downloading dependencies
+ADD pom.xml /code/pom.xml
+RUN ["mvn", "dependency:resolve"]
+RUN ["mvn", "verify"]
+
+# Adding source, compile and package into a fat jar
+ADD src /code/src
+RUN ["mvn", "package"]
+
+EXPOSE 4567
+CMD ["/usr/lib/jvm/java-8-openjdk-amd64/bin/java", "-jar", "target/sparkexample-jar-with-dependencies.jar"]
